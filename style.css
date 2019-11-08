@@ -57,7 +57,7 @@ ul li:hover ul li {
     }
 
 }
-@media only screen and (max-width: auto)  {
+@media only screen and (max-width: 600px)  {
     ul li {
         float: left;
         width: 75px;
