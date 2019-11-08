@@ -1,8 +1,11 @@
 body {
     background: url("joshua.jpeg") no-repeat;
-    background-size: cover;
+    height: 7360px;
+    width: 4912px;
+    background-size: contain;
     font-family: Arial;
     color: white;
+    
 }
 ul {
     margin: 0px auto;
@@ -11,7 +14,7 @@ ul {
 }
 ul li {
     float: left;
-    width: 200px;
+    width: 150px;
     height: 40px;
     background-color: black;
     opacity: .8;
@@ -33,4 +36,44 @@ ul li ul li {
 }
 ul li:hover ul li {
     display: block;
+}
+@media only screen and (max-width: auto)  {
+    ul li {
+        float: left;
+        width: 75px;
+        height: 40px;
+        background-color: black;
+        opacity: .8;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 1px;
+    }
+    body {
+        background: url("joshua.jpeg") no-repeat center fixed;
+        background-size: cover;
+        font-family: Arial;
+        color: white;
+    }
+
+}
+@media only screen and (max-width: auto)  {
+    ul li {
+        float: left;
+        width: 75px;
+        height: 40px;
+        background-color: black;
+        opacity: .8;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 1px;
+    }
+    body {
+        background: url("joshua.jpeg") no-repeat center fixed;
+        background-size: cover;
+        font-family: Arial;
+        color: white;
+    }
+
 }
