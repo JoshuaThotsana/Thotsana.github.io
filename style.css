@@ -37,7 +37,7 @@ ul li ul li {
 ul li:hover ul li {
     display: block;
 }
-@media only screen and (max-width: auto)  {
+@media only screen and (max-height: auto)  {
     ul li {
         float: left;
         width: 75px;
