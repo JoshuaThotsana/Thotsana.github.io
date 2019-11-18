@@ -4,30 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Thotsana Mabotsa</title>
-    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<ul>
-    <li><a>Home</a></li>
+<body>
+    <div class="background"> 
+        <div class="nav">
+            <a class="a active" href="#">HOME</a>
+            <a class="b" href="#">ABOUT</a>
+            <a class="c" href="#">PROJECTS</a>
+            <a class="d" href="#">CONTACT</a>
+        </div>
 
-    <li><a>About</a>
-        <ul><li><a>High School</a></li>
-            <li><a>University</a></li>
-            <li><a>Work</a></li>
-        </ul>
-    </li>
 
-    <li><a>Project</a></li>
-    
-    <li><a>Contact</a>
-        <ul>
-            <li><a>Cellphone</a></li>
-            <li><a>Whatsapp</a></li>
-            <li><a>LinkedIn</a></li>
-        </ul>
+        <div class="content">
 
-    </li>
+            <div class="home">
+                <h1>I am Thotsana</h1>
+                <h3>Junior Mobile & Web Developer</h3>
+            </div>
+            <div class="about">
+                <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b><br> 
+                    Facilis, provident iusto corrupti quas officiis dolorum. 
+                    Cupiditate nihil nulla corrupti error, debitis quos inventore<br> 
+                    excepturi veniam dignissimos vero laudantium velit! Dolorem 
+                    aliquid ad laudantium doloremque sint delectus, sunt cumque 
+                    explicabo animi exercitationem. Ex sit nobis aspernatur ab 
+                    eaque incidunt expedita fugit.</p>
+            </div>
+            <div class="contact">
+                <dl>
+                    <dt><b>Whatsapp/Phone</b></dt>
+                    <dd>079 710 2535</dd>
+                    <dt><b>Email Address</b></dt>
+                    <dd>thotsana.mabotsa@standardbank.co.za</dd>
+                    <dd>thotsana.mabotsa@umuzi.org</dd>
+                    <dd>mabotsathotsana@gmail.com</dd>
+                </dl>
+            </div>
+        </div>
 
-    <li><a>Skills</a></li>
-</ul>
+
+    </div>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').click(function(){
+          //  alert("i am click");
+          var selected = $(this);
+          $('a').removeClass('active');
+          $(selected).addClass('active');
+        });
+
+        var $a =  $('.a'),
+        $b =  $('.b'),
+        $c =  $('.c'),
+        $d =  $('.d'),
+        $home = $('.home'),
+        $about = $('.about');
+        $contact = $('.contact')
+
+        $a.click(function(){
+            $home.fadeIn();
+            $about.fadeOut();
+            $contact.fadeOut();
+        });
+        $b.click(function(){
+            $home.fadeOut();
+            $about.fadeIn();
+            $contact.fadeOut();
+        });
+        $d.click(function(){
+            $home.fadeOut();
+            $about.fadeOut();
+            $contact.fadeIn();
+        })
+
+    });
+</script>
+</body>
 </html>
